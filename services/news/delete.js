@@ -2,7 +2,7 @@ async function call({ query, body, headers, url })
 {
     let data={};
 
-    const mongo = require('../../mongo');
+    const mongo = require('../../mongo/mongo');
     var ObjectId = require('mongodb').ObjectId;
 
     //Llamada para obtener las noticias archivadas y no archivadas.

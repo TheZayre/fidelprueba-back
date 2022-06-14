@@ -2,7 +2,7 @@ async function call({ query, body, headers, url })
 {
     let data={};
 
-    const mongo = require('../../mongo');
+    const mongo = require('../../mongo/mongo');
     
     //Llamada para obtener las noticias archivadas y no archivadas.
     data.noArchived = await mongo.get().collection("news").find({archiveDate: {$exists : false}}).sort({date: -1}).toArray();

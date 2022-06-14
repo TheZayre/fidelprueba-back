@@ -1,6 +1,6 @@
 //Se importa las librerías.
-const expose = require('./express');
-const mongo = require('./mongo');
+const expose = require('./express/express');
+const mongo = require('./mongo/mongo');
 
 //Lógica que se realiza cuando se inicialice la base de datos.
 mongo.onInitialize(() =>
